@@ -45,7 +45,7 @@ class Exporter {
           callback({})
         }
       })
-      fs.close(fd)
+      fs.close(fd, x => console.log(x))
     })
   }
 
